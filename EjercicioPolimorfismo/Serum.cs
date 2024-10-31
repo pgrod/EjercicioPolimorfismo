@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace EjercicioPolimorfismo
+﻿namespace EjercicioPolimorfismo
 {
-    internal class Serum
+    public class Serum : SkinCare
     {
+        public void Vender(string Producto)
+        {
+            Console.WriteLine($"Producto tipo {Producto} de marca {Marca} para aplicar en {aplicacion} ha sido vendido por el precio de {precio} lempiras");
+        }
     }
 }
